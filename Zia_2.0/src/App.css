@@ -1,0 +1,129 @@
+.main-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #121212;
+
+}
+
+.image{
+  margin-top: 9px;
+  width: 500px;
+  height: 60%;
+  border-radius: 20%;
+  mix-blend-mode: lighten;
+
+}
+
+span{
+  padding-top: 20px;
+  color: white;
+  font-size: 30px;
+  background: linear-gradient(to right, rgb(34, 221, 231), rgb(231, 34, 188));
+  background-clip: text;
+  color: transparent;
+}
+
+.btn{
+  margin-top: 30px;
+  padding: 10px;
+  background: linear-gradient(to right, rgb(34, 221, 231), rgb(231, 34, 188));
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 40px rgba(34, 221, 231, 0.5);
+}
+
+.btn:hover{
+  background: linear-gradient(to right, rgb(231, 34, 188), rgb(34, 221, 231));
+  border: 1px solid white;
+  transform: scale(102%);
+}
+
+.icon{
+  margin-left: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+.speakGif{
+  width: 90px;
+  height: 80px;
+  mix-blend-mode: lighten;
+}
+
+p{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+
+}
+
+.para{
+  width: 80%;
+}
+
+.AnimationDiv{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.aivoice{
+  width: 400px;
+  height: 100px;
+  mix-blend-mode: lighten;
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    width: 80%;
+    height: 50%;
+    margin-top: 70px;
+  }
+  
+  span {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .btn {
+    font-size: 16px;
+    padding: 8px;
+  }
+  
+  .icon {
+    font-size: 18px;
+  }
+
+  .aivoice{
+    width: 200px;
+    height: 100px;
+    mix-blend-mode: lighten;
+  }
+
+  p{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+  
+  }
+  
+  .para {
+    width: 90%;
+  }
+}
