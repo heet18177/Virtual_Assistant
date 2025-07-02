@@ -1,12 +1,14 @@
-let API_KEY = "AIzaSyBc9AzRgLmktBTtOj-CRNJb_2XoOJoQCCs";
+const apiKey = import.meta.env.VITE_API_KEY;
+console.log("API Key:", apiKey); 
+// API_KEY = "AIzaSyBc9AzRgLmktBTtOj-CRNJb_2XoOJoQCCs";
 
 import {
 
     GoogleGenerativeAI, HarmCategory, HarmBlockThreshold
 } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash", });
+const genAI = new GoogleGenerativeAI(apiKey);
+const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 const generationConfig = {
     temperature: 1,

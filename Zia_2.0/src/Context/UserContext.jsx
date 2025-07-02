@@ -30,7 +30,7 @@ const [aiResponseAnimation , setAiResponseAnimation] = useState(false);
       setTimeout(()=>{
         setSpeakAnimation(false)
         setAiResponseAnimation(false)
-      },14000)
+      },6000)
 
       return text;
     } catch (error) {
